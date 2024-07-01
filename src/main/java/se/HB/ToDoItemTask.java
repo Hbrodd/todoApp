@@ -6,8 +6,7 @@ public class ToDoItemTask {
     private ToDoItem toDoItem;
     private Person assignee;
 
-    public ToDoItemTask(int id, boolean assigned, ToDoItem toDoItem, Person assignee) {
-        this.id = id;
+    public ToDoItemTask(boolean assigned, ToDoItem toDoItem, Person assignee) {
         this.assigned = assigned;
         this.toDoItem = toDoItem;
         this.assignee = assignee;
@@ -39,6 +38,6 @@ public class ToDoItemTask {
 
     public String getSummary(){
         String summary;
-        return summary = ("ID: " + id + " Assigned: " + assigned + " Assignee" + assignee + " Todo: " + toDoItem);
+        return summary = ("ID: " + id + " Assigned: " + assigned + " Assignee" + assignee.getSummary() + " Todo: " + toDoItem);
     }
 }

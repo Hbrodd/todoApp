@@ -60,6 +60,6 @@ public class ToDoItem {
     }
     public String getSummary(){
         String summary;
-        return summary = ("ID: " + id + " Title: " + title + " Taskdescription: " + taskDescription + " Deadline:" + deadLine + " Done: " + done);
+        return summary = ("ID: " + id + " Title: " + title + " Taskdescription: " + taskDescription + " Deadline:" + deadLine + " Done: " + done + " Creator " + creator.getSummary());
     }
 }
